@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listagem de Pessoas</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <h1>Listagem de Pessoas</h1>
+
+  <!-- Campo de filtro -->
+  <input type="text" id="filtroNome" placeholder="Filtrar por nome..." />
+
+  <!-- Tabela -->
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Nascimento</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="listaPessoas"></tbody>
+  </table>
+
+  <p><a href="cadastro.html">Cadastrar nova pessoa</a></p>
+  <p><a href="index.html">Sair</a></p>
+
+  <script src="js/localStorage.js"></script>
+  <script src="js/listar.js"></script>
+</body>
+</html>

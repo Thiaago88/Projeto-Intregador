@@ -19,3 +19,6 @@ function removerPessoa(index) {
   pessoas.splice(index, 1);
   localStorage.setItem("pessoas", JSON.stringify(pessoas));
 }
+function
+  criptografarSenha(senha) { return CryptoJS.MD5(senha).toString();
+}
